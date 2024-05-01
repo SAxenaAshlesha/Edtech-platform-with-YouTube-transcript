@@ -1,0 +1,147 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    margin-inline: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+input {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: blanchedalmond;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around; /* Adjust spacing between b1 and b2 */
+}
+
+#b1 {
+    flex: 1;
+    text-align: center;
+}
+
+#b1 h2 {
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0;
+}
+
+#b2 {
+    flex: 1;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subject {
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.subject img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#playlist-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#playlist-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgb(127, 255, 174);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#video-player {
+    margin-top: 30px;
+    width: 560px;
+}
+
+#transcript-summary {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2 {
+    font-size: 18px;
+    color: yellow;
+    margin: 0;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    #b1 h2 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #b1 h2 {
+        font-size: 30px; /* Further adjust font size for smaller screens */
+    }
+    #box {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+}
